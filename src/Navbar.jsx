@@ -6,7 +6,7 @@ export default function Navbar({ planetData, planet }) {
       <span className="uppercase font-antonio font-semibold text-3xl tracking-tighter">
         The Planets
       </span>
-      <ul className="flex flex-row">
+      <ul className="flex flex-row gap-8">
         {planetData.map((planetItem) => (
           <Navlink
             key={planetItem.name}

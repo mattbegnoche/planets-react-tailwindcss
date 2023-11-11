@@ -22,3 +22,9 @@ h3,
 h4 {
   font-family: "Spartan", sans-serif;
 }
+
+@layer components {
+  .h2 {
+    @apply text-[2.5rem] uppercase;
+  }
+}
