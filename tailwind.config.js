@@ -3,6 +3,11 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        antonio: ["Antonio", "sans-serif"],
+        spartan: ["Spartan", "sans-serif"],
+      },
+
       colors: {
         white: "#fff",
         merucry: "#419EBB",
@@ -18,10 +23,6 @@ export default {
           700: "#38384F",
           900: "#070724",
         },
-      },
-      fontFamily: {
-        mono: ["var(--font-antonio)"],
-        sans: ["var(--font-spartan)"],
       },
     },
   },
