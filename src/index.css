@@ -2,7 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @font-face {
+@font-face {
+  font-family: "Spartan";
+  src: url("fonts/LeagueSpartan-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
   font-family: "Antonio";
   src: url("fonts/Antonio-VariableFont_wght.ttf") format ("truetype");
-} */
+}
+
+h1,
+h2 {
+  font-family: "Antonio", sans-serif;
+}
+
+body,
+h3,
+h4 {
+  font-family: "Spartan", sans-serif;
+}

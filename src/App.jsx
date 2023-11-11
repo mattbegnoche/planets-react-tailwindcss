@@ -7,7 +7,7 @@ function App() {
   const planetData = data;
   const [planet, setPlanet] = useState("");
   return (
-    <div className="bg-planetGray-900 min-h-screen text-white font-spartan">
+    <div className="bg-planetGray-900 min-h-screen text-white">
       <Navbar planetData={planetData} />
       <Planets planetData={planetData} />
     </div>

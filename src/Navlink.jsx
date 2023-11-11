@@ -2,7 +2,11 @@
 import PropTypes from "prop-types";
 
 export default function Navlink({ name }) {
-  return <li className="uppercase text-xs">{name}</li>;
+  return (
+    <li className="uppercase text-xs font-bold tracking-wider opacity-75 hover:opacity-100">
+      {name}
+    </li>
+  );
 }
 
 Navlink.PropTypes = {
