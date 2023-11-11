@@ -10,7 +10,7 @@ export default {
 
       colors: {
         white: "#fff",
-        merucry: "#419EBB",
+        mercury: "#419EBB",
         venus: "#EDA249",
         earth: "#6D2ED5",
         mars: "#D14C32",
