@@ -5,6 +5,11 @@ import { useState } from "react";
 
 export default function Planet({ planetData, planet }) {
   const [content, setContent] = useState("overview");
+
+  function handleContent(content) {
+    setContent(content);
+  }
+
   return (
     <div className="grid grid-cols-6 max-w-7xl mx-auto px-8 pt-28 pb-14 gap-20">
       <div className="col-span-4 flex items-center justify-center">
@@ -13,7 +18,7 @@ export default function Planet({ planetData, planet }) {
             <img
               src={planetData[planet].images.planet}
               alt={planetData[planet].name}
-            />{" "}
+            />
             {content === "geology" ? (
               <img
                 className="absolute left-1/2 top-1/2 translate-x-[-50%] translate-y-12 w-40"
@@ -40,13 +45,31 @@ export default function Planet({ planetData, planet }) {
           {content === "geology" && <p>{planetData[planet].geology.content}</p>}
         </div>
         <div className="flex flex-col gap-4">
-          <Button>
+          <Button
+            onClick={handleContent}
+            content={"overview"}
+            curContent={content}
+            planetData={planetData}
+            planet={planet}
+          >
             <span>01 Overview</span>
           </Button>
-          <Button>
+          <Button
+            onClick={handleContent}
+            content={"structure"}
+            curContent={content}
+            planetData={planetData}
+            planet={planet}
+          >
             <span>02 Internal Structure</span>
           </Button>
-          <Button>
+          <Button
+            onClick={handleContent}
+            content={"geology"}
+            curContent={content}
+            planetData={planetData}
+            planet={planet}
+          >
             <span>03 Surface Geology</span>
           </Button>
         </div>
