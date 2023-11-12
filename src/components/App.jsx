@@ -6,8 +6,7 @@ import data from "../data";
 
 function App() {
   const planetData = data;
-  const [planet, setPlanet] = useState(2);
-
+  const [planet, setPlanet] = useState(0);
   function handlePlanet(planetIndex) {
     setPlanet(planetIndex);
   }
@@ -21,7 +20,9 @@ function App() {
       />
       <Planet planetData={planetData} planet={planet} />
       <Stars />
-      <div className="bg-mercury bg-venus bg-earth bg-mars bg-saturn bg-jupiter bg-uranus bg-neptune  hidden"></div>
+      {
+        <div className=" md:bg-mercury bg-mercury border-mercury md:bg-venus bg-venus border-venus md:bg-earth bg-earth border-earth md:bg-mars bg-mars border-mars md:bg-saturn bg-saturn border-saturn md:bg-jupiter bg-jupiter border-jupiter md:bg-uranus bg-uranus border-uranus bg-neptune border-neptune md:bg-neptune  hidden"></div>
+      }
     </div>
   );
 }

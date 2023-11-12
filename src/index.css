@@ -31,4 +31,8 @@ h4 {
   .card-title {
     @apply uppercase text-xs text-planetGray-300 font-bold;
   }
+
+  .button-number {
+    @apply hidden md:block text-white opacity-50;
+  }
 }

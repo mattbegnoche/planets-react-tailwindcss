@@ -21,22 +21,53 @@ export default function Planet({ planetData, planet }) {
             {planetData[planet].name}
           </h1>
           {content === "overview" && (
-            <p>{planetData[planet].overview.content}</p>
+            <>
+              <p>{planetData[planet].overview.content}</p>
+              <a
+                href={planetData[planet].overview.source}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <span>Source : Wikipedia</span>
+              </a>
+            </>
           )}
           {content === "structure" && (
-            <p>{planetData[planet].structure.content}</p>
+            <>
+              <p>{planetData[planet].structure.content}</p>
+              <a
+                href={planetData[planet].structure.source}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <span>Source : Wikipedia</span>
+              </a>
+            </>
           )}
-          {content === "geology" && <p>{planetData[planet].geology.content}</p>}
+          {content === "geology" && (
+            <>
+              <p>{planetData[planet].geology.content}</p>
+              <a
+                href={planetData[planet].geology.source}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <span>Source : Wikipedia</span>
+              </a>
+            </>
+          )}
         </div>
-        <div className="flex flex-col gap-4 md:static md:auto absolute top-0 w-full">
+        <div className="flex md:flex-col flex-row justify-center gap-4 md:static md:auto absolute top-[4.25rem] w-full border-b border-planetGray-700 md:border-0 ">
           <Button
             onClick={handleContent}
             content={"overview"}
             curContent={content}
             planetData={planetData}
             planet={planet}
+            number={"01"}
+            text={"Overview"}
           >
-            <span>01 Overview</span>
+            <div></div>
           </Button>
           <Button
             onClick={handleContent}
@@ -44,8 +75,13 @@ export default function Planet({ planetData, planet }) {
             curContent={content}
             planetData={planetData}
             planet={planet}
+            number={"02"}
+            text={"Internal Structure"}
           >
-            <span>02 Internal Structure</span>
+            <div>
+              <span className="button-number">02</span>
+              <span>Internal Structure</span>
+            </div>
           </Button>
           <Button
             onClick={handleContent}
@@ -53,8 +89,13 @@ export default function Planet({ planetData, planet }) {
             curContent={content}
             planetData={planetData}
             planet={planet}
+            number={"03"}
+            text={"Surface Geology"}
           >
-            <span>03 Surface Geology</span>
+            <div>
+              <span className="button-number">03</span>
+              <span>Surface Geology</span>
+            </div>
           </Button>
         </div>
       </PlanetContent>
