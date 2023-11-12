@@ -2,6 +2,7 @@
 import Card from "./Card";
 import Button from "./Button";
 import PlanetImage from "./PlanetImage";
+import PlanetContent from "./PlanetContent";
 import { useState } from "react";
 
 export default function Planet({ planetData, planet }) {
@@ -14,7 +15,7 @@ export default function Planet({ planetData, planet }) {
   return (
     <div className="md:grid md:grid-cols-6 text-center md:text-left max-w-7xl mx-auto md:px-8 pt-28 pb-14 md:gap-20">
       <PlanetImage content={content} planetData={planetData} planet={planet} />
-      <div className="md:col-span-2 flex flex-col gap-10">
+      <PlanetContent>
         <div className="flex flex-col gap-6 ">
           <h1 className="text-[5rem] uppercase font-semibold">
             {planetData[planet].name}
@@ -56,7 +57,7 @@ export default function Planet({ planetData, planet }) {
             <span>03 Surface Geology</span>
           </Button>
         </div>
-      </div>
+      </PlanetContent>
       <div className="col-span-6 grid md:grid-cols-4 gap-8">
         <Card>
           <span className="card-title">Rotation Time</span>
