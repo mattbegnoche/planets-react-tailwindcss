@@ -1,11 +1,11 @@
 /* eslint-disable react/prop-types */
 import iconCheveron from "../assets/icon-chevron.svg";
 
-export default function Navlink({ name, onSetPlanet, index }) {
+export default function Navlink({ name, onSetPlanet, index, setNavOpen }) {
   return (
     <li>
       <button
-        onClick={() => onSetPlanet(index)}
+        onClick={() => onSetPlanet(index) & setNavOpen(false)}
         className="uppercase md:border-none border-b pr-2 md:pr-0 border-planetGray-700 relative md:text-xs font-bold tracking-wider opacity-75 md:py-8 py-5 hover:opacity-100 flex flex-row items-center justify-between w-full transition-all duration-500 ease-in-out group"
       >
         <div className="flex flex-row gap-6">

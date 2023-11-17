@@ -25,14 +25,18 @@ h4 {
 
 @layer components {
   .h2 {
-    @apply text-[2.5rem] uppercase font-semibold;
+    @apply lg:text-[2.5rem] text-xl uppercase font-semibold;
   }
 
   .card-title {
-    @apply uppercase text-xs text-planetGray-300 font-bold;
+    @apply uppercase text-xs text-planetGray-300 font-bold lg:mb-3;
   }
 
   .button-number {
     @apply hidden md:block text-white opacity-50;
+  }
+
+  .link-underline {
+    @apply underline font-bold;
   }
 }
