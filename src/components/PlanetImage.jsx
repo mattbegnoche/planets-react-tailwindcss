@@ -21,6 +21,7 @@ export default function PlanetImage({ planetData, planet, content }) {
         <img
           className="scale-50 md:scale-75 lg:scale-100"
           src={planetData[planet].images.internal}
+          alt={planetData[planet].name}
         />
       )}
     </div>
