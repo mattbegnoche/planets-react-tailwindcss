@@ -2,6 +2,7 @@ import { useState } from "react";
 import Navbar from "./Navbar";
 import Planet from "./Planet";
 import Stars from "./Stars";
+import mecuryPlanet from "/public/assets/planet-mercury.svg";
 
 const data = [
   {
@@ -27,7 +28,7 @@ const data = [
     radius: "2,439.7 KM",
     temperature: "430°c",
     images: {
-      planet: "/public/assets/planet-mercury.svg",
+      planet: `${mecuryPlanet}`,
       internal: "/public/assets/planet-mercury-internal.svg",
       geology: "/public/assets/geology-mercury.png",
     },
