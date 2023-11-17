@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
-import iconHamburger from "../assets/icon-hamburger.svg";
+import iconHamburger from "/public/assets/icon-hamburger.svg";
 import Navlink from "./Navlink";
 export default function Navbar({ planetData, onSetPlanet }) {
   const [navOpen, setNavOpen] = useState(false);

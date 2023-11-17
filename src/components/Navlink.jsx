@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import iconCheveron from "../assets/icon-chevron.svg";
+import iconCheveron from "/public/assets/icon-chevron.svg";
 
 export default function Navlink({ name, onSetPlanet, index, setNavOpen }) {
   return (

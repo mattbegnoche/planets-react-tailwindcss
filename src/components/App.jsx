@@ -27,9 +27,9 @@ const data = [
     radius: "2,439.7 KM",
     temperature: "430°c",
     images: {
-      planet: "/src/assets/planet-mercury.svg",
-      internal: "/src/assets/planet-mercury-internal.svg",
-      geology: "/src/assets/geology-mercury.png",
+      planet: "/public/assets/planet-mercury.svg",
+      internal: "/public/assets/planet-mercury-internal.svg",
+      geology: "/public/assets/geology-mercury.png",
     },
   },
   {
@@ -54,9 +54,9 @@ const data = [
     radius: "6,051.8 KM",
     temperature: "471°c",
     images: {
-      planet: "/src/assets/planet-venus.svg",
-      internal: "/src/assets/planet-venus-internal.svg",
-      geology: "/src/assets/geology-venus.png",
+      planet: "/public/assets/planet-venus.svg",
+      internal: "/public/assets/planet-venus-internal.svg",
+      geology: "/public/assets/geology-venus.png",
     },
   },
   {
@@ -81,9 +81,9 @@ const data = [
     radius: "6,371 KM",
     temperature: "16°c",
     images: {
-      planet: "/src/assets/planet-earth.svg",
-      internal: "/src/assets/planet-earth-internal.svg",
-      geology: "/src/assets/geology-earth.png",
+      planet: "/public/assets/planet-earth.svg",
+      internal: "/public/assets/planet-earth-internal.svg",
+      geology: "/public/assets/geology-earth.png",
     },
   },
   {
@@ -108,9 +108,9 @@ const data = [
     radius: "3,389.5 KM",
     temperature: "-28°c",
     images: {
-      planet: "/src/assets/planet-mars.svg",
-      internal: "/src/assets/planet-mars-internal.svg",
-      geology: "/src/assets/geology-mars.png",
+      planet: "/public/assets/planet-mars.svg",
+      internal: "/public/assets/planet-mars-internal.svg",
+      geology: "/public/assets/geology-mars.png",
     },
   },
   {
@@ -136,9 +136,9 @@ const data = [
     radius: "69,911 KM",
     temperature: "-108°c",
     images: {
-      planet: "/src/assets/planet-jupiter.svg",
-      internal: "/src/assets/planet-jupiter-internal.svg",
-      geology: "/src/assets/geology-jupiter.png",
+      planet: "/public/assets/planet-jupiter.svg",
+      internal: "/public/assets/planet-jupiter-internal.svg",
+      geology: "/public/assets/geology-jupiter.png",
     },
   },
   {
@@ -163,9 +163,9 @@ const data = [
     radius: "58,232 KM",
     temperature: "-138°c",
     images: {
-      planet: "/src/assets/planet-saturn.svg",
-      internal: "/src/assets/planet-saturn-internal.svg",
-      geology: "/src/assets/geology-saturn.png",
+      planet: "/public/assets/planet-saturn.svg",
+      internal: "/public/assets/planet-saturn-internal.svg",
+      geology: "/public/assets/geology-saturn.png",
     },
   },
   {
@@ -190,9 +190,9 @@ const data = [
     radius: "25,362 KM",
     temperature: "-195°c",
     images: {
-      planet: "/src/assets/planet-uranus.svg",
-      internal: "/src/assets/planet-uranus-internal.svg",
-      geology: "/src/assets/geology-uranus.png",
+      planet: "/public/assets/planet-uranus.svg",
+      internal: "/public/assets/planet-uranus-internal.svg",
+      geology: "/public/assets/geology-uranus.png",
     },
   },
   {
@@ -217,9 +217,9 @@ const data = [
     radius: "24,622 KM",
     temperature: "-201°c",
     images: {
-      planet: "/src/assets/planet-neptune.svg",
-      internal: "/src/assets/planet-neptune-internal.svg",
-      geology: "/src/assets/geology-neptune.png",
+      planet: "/public/assets/planet-neptune.svg",
+      internal: "/public/assets/planet-neptune-internal.svg",
+      geology: "/public/assets/geology-neptune.png",
     },
   },
 ];

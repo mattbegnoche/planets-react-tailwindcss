@@ -4,7 +4,7 @@ import Button from "./Button";
 import PlanetImage from "./PlanetImage";
 import PlanetContent from "./PlanetContent";
 import { useState } from "react";
-import sourceIcon from "../assets/icon-source.svg";
+import sourceIcon from "/public/assets/icon-source.svg";
 
 export default function Planet({ planetData, planet }) {
   const [content, setContent] = useState("overview");

@@ -1,4 +1,4 @@
-import backgroundStars from "../assets/background-stars.svg";
+import backgroundStars from "/public/assets/background-stars.svg";
 export default function Stars() {
   return (
     <div>
