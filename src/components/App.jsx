@@ -2,7 +2,30 @@ import { useState } from "react";
 import Navbar from "./Navbar";
 import Planet from "./Planet";
 import Stars from "./Stars";
-import mecuryPlanet from "/public/assets/planet-mercury.svg";
+import mercuryPlanet from "/public/assets/planet-mercury.svg";
+import mercuryPlanetInternal from "/public/assets/planet-mercury-internal.svg";
+import mercuryPlanetGeology from "/public/assets/geology-mercury.png";
+import earthPlanet from "/public/assets/planet-earth.svg";
+import earthPlanetInternal from "/public/assets/planet-earth-internal.svg";
+import earthPlanetGeology from "/public/assets/geology-earth.png";
+import marsPlanet from "/public/assets/planet-mars.svg";
+import marsPlanetInternal from "/public/assets/planet-mars-internal.svg";
+import marsPlanetGeology from "/public/assets/geology-mars.png";
+import saturnPlanet from "/public/assets/planet-saturn.svg";
+import saturnPlanetInternal from "/public/assets/planet-saturn-internal.svg";
+import saturnPlanetGeology from "/public/assets/geology-saturn.png";
+import uranusPlanet from "/public/assets/planet-uranus.svg";
+import uranusPlanetInternal from "/public/assets/planet-uranus-internal.svg";
+import uranusPlanetGeology from "/public/assets/geology-uranus.png";
+import neptunePlanet from "/public/assets/planet-neptune.svg";
+import neptunePlanetInternal from "/public/assets/planet-neptune-internal.svg";
+import neptunePlanetGeology from "/public/assets/geology-neptune.png";
+import jupiterPlanet from "/public/assets/planet-jupiter.svg";
+import jupiterPlanetInternal from "/public/assets/planet-jupiter-internal.svg";
+import jupiterPlanetGeology from "/public/assets/geology-jupiter.png";
+import venusPlanet from "/public/assets/planet-venus.svg";
+import venusPlanetInternal from "/public/assets/planet-venus-internal.svg";
+import venusPlanetGeology from "/public/assets/geology-venus.png";
 
 const data = [
   {
@@ -28,9 +51,9 @@ const data = [
     radius: "2,439.7 KM",
     temperature: "430°c",
     images: {
-      planet: `${mecuryPlanet}`,
-      internal: "/public/assets/planet-mercury-internal.svg",
-      geology: "/public/assets/geology-mercury.png",
+      planet: `${mercuryPlanet}`,
+      internal: `${mercuryPlanetInternal}`,
+      geology: `${mercuryPlanetGeology}`,
     },
   },
   {
@@ -55,9 +78,9 @@ const data = [
     radius: "6,051.8 KM",
     temperature: "471°c",
     images: {
-      planet: "/public/assets/planet-venus.svg",
-      internal: "/public/assets/planet-venus-internal.svg",
-      geology: "/public/assets/geology-venus.png",
+      planet: `${venusPlanet}`,
+      internal: `${venusPlanetInternal}`,
+      geology: `${venusPlanetGeology}`,
     },
   },
   {
@@ -82,9 +105,9 @@ const data = [
     radius: "6,371 KM",
     temperature: "16°c",
     images: {
-      planet: "/public/assets/planet-earth.svg",
-      internal: "/public/assets/planet-earth-internal.svg",
-      geology: "/public/assets/geology-earth.png",
+      planet: `${earthPlanet}`,
+      internal: `${earthPlanetInternal}`,
+      geology: `${earthPlanetGeology}`,
     },
   },
   {
@@ -109,9 +132,9 @@ const data = [
     radius: "3,389.5 KM",
     temperature: "-28°c",
     images: {
-      planet: "/public/assets/planet-mars.svg",
-      internal: "/public/assets/planet-mars-internal.svg",
-      geology: "/public/assets/geology-mars.png",
+      planet: `${marsPlanet}`,
+      internal: `${marsPlanetInternal}`,
+      geology: `${marsPlanetGeology}`,
     },
   },
   {
@@ -137,9 +160,9 @@ const data = [
     radius: "69,911 KM",
     temperature: "-108°c",
     images: {
-      planet: "/public/assets/planet-jupiter.svg",
-      internal: "/public/assets/planet-jupiter-internal.svg",
-      geology: "/public/assets/geology-jupiter.png",
+      planet: `${jupiterPlanet}`,
+      internal: `${jupiterPlanetInternal}`,
+      geology: `${jupiterPlanetGeology}`,
     },
   },
   {
@@ -164,9 +187,9 @@ const data = [
     radius: "58,232 KM",
     temperature: "-138°c",
     images: {
-      planet: "/public/assets/planet-saturn.svg",
-      internal: "/public/assets/planet-saturn-internal.svg",
-      geology: "/public/assets/geology-saturn.png",
+      planet: `${saturnPlanet}`,
+      internal: `${saturnPlanetInternal}`,
+      geology: `${saturnPlanetGeology}`,
     },
   },
   {
@@ -191,9 +214,9 @@ const data = [
     radius: "25,362 KM",
     temperature: "-195°c",
     images: {
-      planet: "/public/assets/planet-uranus.svg",
-      internal: "/public/assets/planet-uranus-internal.svg",
-      geology: "/public/assets/geology-uranus.png",
+      planet: `${uranusPlanet}`,
+      internal: `${uranusPlanetInternal}`,
+      geology: `${uranusPlanetGeology}`,
     },
   },
   {
@@ -218,9 +241,9 @@ const data = [
     radius: "24,622 KM",
     temperature: "-201°c",
     images: {
-      planet: "/public/assets/planet-neptune.svg",
-      internal: "/public/assets/planet-neptune-internal.svg",
-      geology: "/public/assets/geology-neptune.png",
+      planet: `${neptunePlanet}`,
+      internal: `${neptunePlanetInternal}`,
+      geology: `${neptunePlanetGeology}`,
     },
   },
 ];
