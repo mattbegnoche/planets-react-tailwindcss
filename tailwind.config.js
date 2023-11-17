@@ -4,8 +4,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        antonio: ["Antonio", "sans-serif"],
-        spartan: ["Spartan", "sans-serif"],
+        antonio: ["Antonio Variable", "sans-serif"],
+        spartan: ["League Spartan Variable", "sans-serif"],
       },
 
       colors: {

@@ -17,7 +17,7 @@ export default function Planet({ planetData, planet }) {
     <div className="lg:grid lg:grid-cols-6 text-center md:text-left max-w-7xl  mx-auto md:px-8 pt-20 md:pt-28 pb-14 md:gap-20">
       <PlanetImage content={content} planetData={planetData} planet={planet} />
       <PlanetContent>
-        <div className="flex flex-col  gap-6 px-6 ">
+        <div className="flex flex-col  gap-6 lg:px-0 px-6 ">
           <h1 className="md:text-[5rem] text-[2.5rem] uppercase font-semibold">
             {planetData[planet].name}
           </h1>
